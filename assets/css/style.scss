@@ -18,7 +18,7 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 }
 
 h1 {
-  color: #e9b21c !important;
+  color: #c37c12 !important;
   
 }
 
@@ -102,3 +102,15 @@ pre {
   padding: 1em;
   overflow: auto;
 }
+
+/* Заголовок */
+header .ribbon-inner h1 {
+  color: #ffcc00 !important; 
+}
+
+/* Описание */
+header .ribbon-inner h2 {
+  color: #00ff00;
+  display: none;
+}
+
