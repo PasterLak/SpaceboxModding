@@ -1,26 +1,74 @@
 ---
 ---
 
-
-/* 
-$font-stack:    Helvetica, sans-serif;
+/* Задаём стандартные значения переменных (изменяйте при необходимости) */
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color: #333333;
-*/
+$secondary-color: #555555;
+$background-color: #ffffff;
+$header-color: #d8aa11;
+$link-color: #1e90ff;
+$body-font-size: 16px;
+$line-height: 1.6;
 
 @import "{{ site.theme }}";
 
+/* Основные стили, переопределяющие тему */
 
-h1, h2, h3, h4, h5, h6 {
-  color: #ff6600;
+/* Общие стили для body */
+body {
+  font-family: $font-stack;
+  font-size: $body-font-size;
+  line-height: $line-height;
+  background-color: $background-color;
+  color: $primary-color;
 }
 
+/* Заголовки (в том числе внутри <article>) */
+h1, h2, h3, h4, h5, h6,
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  color: $header-color;
+  font-family: $font-stack;
+}
 
+/* Стили для ссылок */
+a {
+  color: $link-color;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Расширение контейнера для основного контента */
 .container, .site-main {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
-
+/* Скрытие кнопки "Fork me on GitHub" */
 .fork-me {
-  display: none;
+  display: none !important;
+}
+
+/* Отступы для параграфов и секций */
+p {
+  margin-bottom: 1em;
+}
+
+section {
+  margin: 2em 0;
+}
+
+/* Стилизация блоков кода */
+code, pre {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  padding: 1em;
+  overflow: auto;
 }
