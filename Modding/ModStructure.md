@@ -21,4 +21,4 @@ The mod folder can have any name. Inside the folder, there are several files and
 - **Sounds** — Contains sounds for items and interactions.
 - **UI** — Currently empty; it will be used for UI customization and adding new windows.
 
-[Back to Contents](README.md)
+[Back to Home](../README.md)

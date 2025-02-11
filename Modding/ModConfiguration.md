@@ -8,4 +8,4 @@ In the `config.json` file, you must specify the `ModId`. This is mandatory and m
 - **BlockSize** — Defines the size of block textures in pixels.  
   <span style="color:red;">**Important:**</span> This parameter has not been fully tested, so it is recommended not to change it for now.
 
-[Back to Contents](Welcome.md)
+[Back to Home](../README.md)
