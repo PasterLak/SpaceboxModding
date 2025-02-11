@@ -2,7 +2,8 @@
 
 In the `config.json` file, you must specify the `ModId`. This is mandatory and must be unique.
 
-<span style="color:red;">**Important:**</span> The `ModId` must be unique to avoid conflicts.
+
+<span style="color:red;">**Important!**</span> The `ModId` must be unique to avoid conflicts.
 
 ### Parameters:
 - **BlockSize** — Defines the size of block textures in pixels.  

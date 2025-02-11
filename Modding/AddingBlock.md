@@ -1,11 +1,11 @@
 # 4. Adding Blocks
 
 ## 4.1 Texture
-<img src="../Images/display.png" alt="Display" width="200" height="200">
+<img src="../Images/display.png" alt="Display" width="64" height="64">
 
 To add a custom block, first create a block texture and place it in the `Blocks` folder.
 
-<span style="color:red;">**Important:**</span> Block texture names are also their IDs. They must be unique.
+<span style="color:red;">**Important!**</span> Block texture names are also their IDs. They must be unique.
 
 ## 4.2 Data
 Next, add the block description in `blocks.json`.
