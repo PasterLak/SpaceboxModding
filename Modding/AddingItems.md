@@ -1,3 +1,5 @@
+[< Back to Contents](../README.md)
+
 # 5. Adding Items
 
 ## 5.1 Texture
@@ -189,4 +191,4 @@ Set the item type to `weapon`.
   </tbody>
 </table>
 
-[Back to Home](../README.md)
+[< Back to Contents](../README.md)

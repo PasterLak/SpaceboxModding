@@ -1,3 +1,5 @@
+[< Back to Contents](../README.md)
+
 # 3. Mod Configuration
 
 In the `config.json` file, you must specify the `ModId`. This is mandatory and must be unique.
@@ -11,7 +13,6 @@ In the `config.json` file, you must specify the `ModId`. This is mandatory and m
 
 ### File example:
 ```json 
-
 {
     "ModId": "MyFirstMod",
     "ModName": "My First Mod",
@@ -33,9 +34,7 @@ In the `config.json` file, you must specify the `ModId`. This is mandatory and m
        
     ]
 }
-
-
 ```
 
 
-[Back to Home](../README.md)
+[< Back to Contents](../README.md)

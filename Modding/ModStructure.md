@@ -1,3 +1,5 @@
+[< Back to Contents](../README.md)
+
 # 1. Mod Structure
 
 All mods are stored in the `/GameSets` folder.  
@@ -21,4 +23,4 @@ The mod folder can have any name. Inside the folder, there are several files and
 - **Sounds** — Contains sounds for items and interactions.
 - **UI** — Currently empty; it will be used for UI customization and adding new windows.
 
-[Back to Home](../README.md)
+[< Back to Contents](../README.md)

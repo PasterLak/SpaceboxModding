@@ -1,3 +1,5 @@
+[< Back to Contents](../README.md)
+
 # 4. Adding Blocks
 
 ## 4.1 Texture
@@ -136,4 +138,4 @@ Next, add the block description in `blocks.json`.
 To make a block glow, place a texture in the `Emissions` folder with the same name as the block texture.  
 All non-transparent pixels in this texture will glow in the dark. The color of the pixels does not matter.
 
-[Back to Home](../README.md)
+[< Back to Contents](../README.md)
