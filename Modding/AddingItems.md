@@ -1,7 +1,7 @@
 # 5. Adding Items
 
 ## 5.1 Texture
-<img src="/Images/oxygen.png" alt="Oxygen" width="200" height="200">
+<img src="../Images/oxygen.png" alt="Oxygen" width="200" height="200">
 To add a custom item, first create an item texture and place it in the `Items` folder.
 
 <span style="color:red;">**Important:**</span> Item texture names are also their IDs. They must be unique.
@@ -188,4 +188,4 @@ Set the item type to `weapon`.
   </tbody>
 </table>
 
-[Back to Contents](Welcome.md)
+[Back to Home](../README.md)
