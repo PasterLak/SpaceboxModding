@@ -1,10 +1,6 @@
 ---
 ---
 
-/* Задаём стандартные значения переменных (изменяйте при необходимости) */
-
-$primary-color: #333333;
-$secondary-color: #555555;
 
 /*$background-color: #ffffff;*/
 $header-color: #d8aa11;
@@ -14,25 +10,23 @@ $line-height: 1.6;
 
 @import "{{ site.theme }}";
 
-/* Основные стили, переопределяющие тему */
 
-/* Общие стили для body */
 body {
 
   font-size: $body-font-size;
   line-height: $line-height;
- 
+  
   color: $primary-color;
 }
 
-/* Заголовки (в том числе внутри <article>) */
+
 h1, h2, h3, h4, h5, h6,
 article h1, article h2, article h3, article h4, article h5, article h6 {
   color: $header-color;
-
+  
 }
 
-/* Стили для ссылок */
+
 a {
   color: $link-color;
 }
@@ -41,14 +35,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Расширение контейнера для основного контента */
+
 .container, .site-main {
   max-width: 1200px !important;
   margin: 0 auto !important;
 }
 
-/* Скрытие кнопки "Fork me on GitHub" */
-.fork-me {
+
+.forkme_banner {
   display: none !important;
 }
 
@@ -61,10 +55,10 @@ section {
   margin: 2em 0;
 }
 
-/* Стилизация блоков кода */
+
 code, pre {
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  background-color: #252524;
+  background-color: #f5f5f5;
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
