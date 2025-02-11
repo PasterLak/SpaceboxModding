@@ -1,5 +1,8 @@
-This is your new *vault*.
+# Modding Guide
 
-Make a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!
-
-When you're ready, delete this note and make the vault your own.
+## Contents
+1. [Mod Structure](ModStructure.md)
+2. [Supported File Types](SupportedFileTypes.md)
+3. [Mod Configuration](ModConfiguration.md)
+4. [Adding Blocks](AddingBlocks.md)
+5. [Adding Items](AddingItems.md)
