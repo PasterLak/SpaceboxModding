@@ -1,0 +1,26 @@
+---
+---
+
+
+/* 
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333333;
+*/
+
+@import "{{ site.theme }}";
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff6600;
+}
+
+
+.container, .site-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.fork-me {
+  display: none;
+}
