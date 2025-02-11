@@ -78,13 +78,13 @@ section {
 
   :not(pre) > code {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    background-color: #dad5bc;
+    background-color: #dad5bc ;
     padding: 0.2em 0.4em;
     border-radius: 3px;
   }
 
   pre {
-    background-color: $code-background; 
+    background-color: $code-background !important; 
     padding: 1em;
     overflow: auto;
   }
@@ -92,7 +92,7 @@ section {
 
   pre code {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    background-color: $code-background;
+    background-color: $code-background !important;
    
     padding: 0.2em 0.4em;
     border-radius: 3px;
