@@ -38,7 +38,6 @@ a:hover {
   display: none !important;
 }
 
-/* Отступы для параграфов и секций */
 p {
   margin-bottom: 1em;
 }
@@ -48,12 +47,13 @@ section {
 }
 
 
-code, pre {
+code {
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  background-color: #f5f5f5;
+  background-color: #33322d;
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
+
 
 pre {
   padding: 1em;
