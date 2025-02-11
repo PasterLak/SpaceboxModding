@@ -50,10 +50,17 @@ section {
 
   :not(pre) > code {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    background-color: #b2ae97;
+    background-color: #dad5bc;
     padding: 0.2em 0.4em;
     border-radius: 3px;
   }
+
+  pre {
+    background-color: #3b3a3a; /* Цвет фона контейнера блока кода */
+    padding: 1em;
+    overflow: auto;
+  }
+  
 
   pre code {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
@@ -62,8 +69,6 @@ section {
     padding: 0.2em 0.4em;
     border-radius: 3px;
   }
-  
-  
 
 pre {
   padding: 1em;
