@@ -46,15 +46,24 @@ p {
 section {
   margin: 2em 0;
 }
-
+.ribbon-inner {
+    display: none !important;
+  }
+  
 
 code {
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  background-color: #33322d;
+  background-color: #f5f5f5;
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
 
+ pre {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    background-color: #3b3a3a;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+  }
 
 pre {
   padding: 1em;
