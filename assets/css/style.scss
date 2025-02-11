@@ -46,14 +46,11 @@ p {
 section {
   margin: 2em 0;
 }
-.ribbon-inner {
-    display: none !important;
-  }
-  
+
 
   :not(pre) > code {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    background-color: #7f4e4e;
+    background-color: #b2ae97;
     padding: 0.2em 0.4em;
     border-radius: 3px;
   }
@@ -61,6 +58,7 @@ section {
   pre code {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     background-color: #3b3a3a;
+    color: #3b3a3a;
     padding: 0.2em 0.4em;
     border-radius: 3px;
   }
