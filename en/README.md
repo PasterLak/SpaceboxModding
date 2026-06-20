@@ -1,6 +1,6 @@
 # Spacebox Modding
 
-![Space Game Logo](../../images/modding.png)
+![Space Game Logo](images/modding.png)
 
 Welcome to the official modding documentation. Here you will find guides on how to extend the game.
 

@@ -30,6 +30,14 @@
   <div id="app">Loading...</div>
   
   <script>
+    var currentPath = window.location.pathname;
+    if (currentPath.endsWith('index.html')) {
+      currentPath = currentPath.replace('index.html', '');
+    }
+    if (!currentPath.endsWith('/')) {
+      currentPath += '/';
+    }
+
     function changeVersion(version) {
       var currentHash = window.location.hash;
       var match = currentHash.match(/#\/(v[0-9.]+)\/(.*)/);
@@ -47,7 +55,7 @@
     }
 
     window.$docsify = {
-      name: 'Spacebox Modding',
+      name: 'Space Modding',
       repo: '',
       homepage: 'README.md',
       loadSidebar: true,
@@ -55,18 +63,24 @@
       sidebarDisplayLevel: 1,
       subMaxLevel: 2,
       auto2top: true,
-      basePath: 'en/',
+      basePath: currentPath + 'en/',
       routerMode: 'hash',
       topMargin: 80,
 
       alias: {
         '/.*/README': 'README',
         '/.*/installation': 'installation',
-        '/.*/file-types': '/file-types'
+        '/.*/file-types': 'file-types'
       },
 
       plugins: [
         function(hook, vm) {
+          hook.beforeEach(function(content) {
+            return content.replace(/!\[([^\]]*)\]\([^)]*images\/([^)]+)\)/g, function(match, alt, file) {
+              return '<img src="' + currentPath + 'images/' + file + '" alt="' + alt + '">';
+            });
+          });
+
           hook.doneEach(function() {
             var hash = window.location.hash;
             var versionMatch = hash.match(/#\/(v[0-9.]+)\//);
