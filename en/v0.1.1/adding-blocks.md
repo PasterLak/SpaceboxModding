@@ -4,7 +4,7 @@
 
 ## Texture
 
-<img src="/images/display.png" alt="Display">
+<img src="images/display.png" alt="Display">
 
 To add a custom block, first create a block texture and place it in the `Blocks` folder.
 
