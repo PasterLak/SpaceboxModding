@@ -76,8 +76,8 @@
       plugins: [
         function(hook, vm) {
           hook.beforeEach(function(content) {
-            return content.replace(/!\[([^\]]*)\]\([^)]*images\/([^)]+)\)/g, function(match, alt, file) {
-              return '<img src="' + currentPath + 'images/' + file + '" alt="' + alt + '">';
+            return content.replace(/!\[([^\]]*)\]\([^)]*media\/([^)]+)\)/g, function(match, alt, file) {
+              return '<img src="' + currentPath + 'media/' + file + '" alt="' + alt + '">';
             });
           });
 
