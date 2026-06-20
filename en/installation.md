@@ -3,8 +3,8 @@
 To start creating mods, you need to set up your development environment.
 
 ## Prerequisites
-1. .NET SDK 8.0 or newer
-2. IDE (VS Code or Visual Studio)
+1. -
+2. -
 
 ## Step 1
-Clone the official template repository and reference the game binaries.
+ todo
