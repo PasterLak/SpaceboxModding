@@ -1,0 +1,7 @@
+* [Welcome](/README)
+* [Installation](/installation)
+* [Supported File Types](/file-types)
+* [Mod Structure](/mod-structure)
+* [Mod Configuration](/mod-configuration)
+* [Adding Blocks](/adding-blocks)
+* [Adding Items](/adding-items)

@@ -1,11 +1,11 @@
-[< Back to Contents](../README.md)
 
-# 3. Mod Configuration
+
+# Mod Configuration
 
 In the `config.json` file, you must specify the `ModId`. This is mandatory and must be unique.
 
 
-<span style="color:red;">**Important!**</span> The `ModId` must be unique to avoid conflicts.
+> **Important!** The `ModId` must be unique to avoid conflicts.
 
 ### Parameters:
 - **BlockSize** — Defines the size of block textures in pixels.  
@@ -37,4 +37,3 @@ In the `config.json` file, you must specify the `ModId`. This is mandatory and m
 ```
 
 
-[< Back to Contents](../README.md)

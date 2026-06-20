@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Game Modding</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Modding documentation for our space game">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" />
+  <style>
+    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 999; background: #1f1f1f; padding: 10px; }
+    .navbar-item { color: #fff; }
+    body.close .sidebar { top: 50px; }
+    .sidebar { top: 50px; }
+    .markdown-section {
+  counter-reset: h2counter;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <section class="navbar-section">
+      <div class="navbar-item">
+        <label for="version-select">Version:</label>
+        <select id="version-select" onchange="changeVersion(this.value)">
+          <option value="v0.1.1">0.1.1</option>
+          <option value="v0.1.2">0.1.2</option>
+        </select>
+      </div>
+    </section>
+  </nav>
+  
+  <div id="app">Loading...</div>
+  
+  <script>
+    function changeVersion(version) {
+      var currentHash = window.location.hash;
+      var match = currentHash.match(/#\/(v[0-9.]+)\/(.*)/);
+      
+      if (match) {
+        window.location.hash = '#/' + version + '/' + match[2];
+      } else {
+        var cleanHash = currentHash.replace(/^#\/?/, '');
+        if (cleanHash && cleanHash !== 'README' && !cleanHash.match(/^v0\./)) {
+          window.location.hash = '#/' + version + '/' + cleanHash;
+        } else {
+          window.location.hash = '#/' + version + '/README';
+        }
+      }
+    }
+
+    window.$docsify = {
+      name: 'Space Modding',
+      repo: '',
+      homepage: 'README.md',
+      loadSidebar: true,
+      loadNavbar: false,
+      sidebarDisplayLevel: 1,
+      subMaxLevel: 2,
+      auto2top: true,
+      basePath: '/en/',
+      routerMode: 'hash',
+      topMargin: 80,
+
+      alias: {
+        '/.*/README': '/README',
+        '/.*/installation': '/installation',
+        '/.*/file-types': '/file-types'
+      },
+
+      plugins: [
+        function(hook, vm) {
+          hook.doneEach(function() {
+            var hash = window.location.hash;
+            var versionMatch = hash.match(/#\/(v[0-9.]+)\//);
+            var version = versionMatch ? versionMatch[1] : 'v0.1.1';
+
+            document.querySelectorAll('.sidebar-nav a').forEach(function(link) {
+              var href = link.getAttribute('href');
+              if (href && href.startsWith('#/') && !href.startsWith('#/' + version + '/')) {
+                var cleanPath = href.replace(/^#\/?/, '').replace(/^(v[0-9.]+\/)/, '');
+                link.setAttribute('href', '#/' + version + '/' + cleanPath);
+              }
+            });
+
+            var select = document.getElementById('version-select');
+            if (select) select.value = version;
+          });
+        }
+      ]
+    }
+
+    if (!location.hash || location.hash === '#/' || location.hash === '#') {
+      location.hash = '#/v0.1.1/README';
+    }
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1"></script>
+</body>
+</html>
