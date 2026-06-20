@@ -6,17 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Modding documentation for our space game">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/dark.css">
   <style>
     .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 999; background: #1f1f1f; padding: 10px; }
     .navbar-item { color: #fff; }
     body.close .sidebar { top: 50px; }
     .sidebar { top: 50px; }
-    .markdown-section {
-  counter-reset: h2counter;
-}
-
-
   </style>
 </head>
 <body>
@@ -60,13 +55,13 @@
       sidebarDisplayLevel: 1,
       subMaxLevel: 2,
       auto2top: true,
-      basePath: '/en/',
+      basePath: 'en/',
       routerMode: 'hash',
       topMargin: 80,
 
       alias: {
-        '/.*/README': '/README',
-        '/.*/installation': '/installation',
+        '/.*/README': 'README',
+        '/.*/installation': 'installation',
         '/.*/file-types': '/file-types'
       },
 
