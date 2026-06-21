@@ -3,7 +3,7 @@
 # Adding Items
 
 ## Texture
-<img src="media/oxygen.png" alt="Oxygen">
+![Oxygen](media/oxygen.png)
 
 To add a custom item, first create an item texture and place it in the `Items` folder.
 
