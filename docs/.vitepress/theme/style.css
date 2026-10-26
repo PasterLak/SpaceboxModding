@@ -1,0 +1,96 @@
+:root {
+  --vp-c-brand-1: #6b4ff0;
+  --vp-c-brand-2: #7d64f5;
+  --vp-c-brand-3: #8f79f8;
+  --vp-c-brand-soft: rgba(107, 79, 240, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #8f79f8 20%, #3ec7e8 80%);
+  --vp-home-hero-image-background-image: radial-gradient(circle, rgba(124, 92, 255, 0.45) 0%, rgba(62, 199, 232, 0.25) 45%, transparent 70%);
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+.dark {
+  --vp-c-brand-1: #a594ff;
+  --vp-c-brand-2: #8f79f8;
+  --vp-c-brand-3: #7d64f5;
+  --vp-c-brand-soft: rgba(143, 121, 248, 0.16);
+
+  --vp-c-bg: #0d0f1a;
+  --vp-c-bg-alt: #090b13;
+  --vp-c-bg-elv: #141729;
+  --vp-c-bg-soft: #141729;
+  --vp-code-block-bg: #11142a;
+}
+
+.dark .VPContent.is-home {
+  background-image:
+    radial-gradient(1px 1px at 12% 18%, rgba(255, 255, 255, 0.55) 50%, transparent 51%),
+    radial-gradient(1px 1px at 72% 12%, rgba(255, 255, 255, 0.45) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 38% 62%, rgba(255, 255, 255, 0.35) 50%, transparent 51%),
+    radial-gradient(1px 1px at 88% 44%, rgba(255, 255, 255, 0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 22% 82%, rgba(255, 255, 255, 0.4) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 58% 30%, rgba(255, 255, 255, 0.3) 50%, transparent 51%),
+    radial-gradient(1px 1px at 92% 86%, rgba(255, 255, 255, 0.45) 50%, transparent 51%);
+  background-size: 640px 640px;
+}
+
+.VPHero .image-src {
+  max-width: 220px;
+  max-height: 220px;
+  image-rendering: pixelated;
+}
+
+.VPNavBarTitle .logo {
+  image-rendering: pixelated;
+}
+
+.vp-doc img {
+  border-radius: 8px;
+  image-rendering: pixelated;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.vp-doc td:first-child code,
+.vp-doc th:first-child {
+  white-space: nowrap;
+}
+
+.vp-doc .kind-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.vp-doc .kind-card {
+  display: block;
+  padding: 18px 20px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.vp-doc .kind-card:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
+}
+
+.vp-doc .kind-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc .kind-card span {
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+}
