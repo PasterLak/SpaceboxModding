@@ -93,7 +93,7 @@ All rules are true/false, except the two hotbar numbers. The last three columns 
 | `InstantBreak` | Blocks break at once instead of being drilled. | no | yes | no |
 | `BreakUnbreakable` | Blocks that are normally unbreakable can be broken. | no | yes | no |
 | `AreaTools` | Erase and fill whole areas. | no | yes | no |
-| `ShipLibrary` | Place saved ships and structures. | no | yes | no |
+| `ShipLibrary` | Place saved ships and structures from the Structures window (<kbd>B</kbd>). Without it you can still open the window, view your builds and export them, but not place them. | no | yes | no |
 | `FreeFlashlight` | Flashlight without a flashlight item. | no | no | yes |
 | `FullRadar` | Full radar without a radar item. | no | no | yes |
 | `CountStatistics` | Player statistics are counted. | yes | yes | no |
