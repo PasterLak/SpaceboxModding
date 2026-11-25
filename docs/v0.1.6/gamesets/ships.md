@@ -145,7 +145,7 @@ Settings of a `shipconsole`:
 |---|---|---|---|
 | `Buttons` | integer | `8` | Number of key groups players can bind thrusters, cannons and spotlights to (1-16). |
 | `Power` | integer | `15` | Power use in EU (0-8000). The console must be powered to sit at it. |
-| `Weapons` | true/false | `false` | `true` makes a gunner console that only controls cannons. |
+| `Weapons` | true/false | `false` | `true` makes a gunner console that binds only cannons and lets the pilot aim them. |
 | `Flight` | true/false | `true` | `true` flies the ship (key groups and mouse steering). `false` makes a console that only fires its key groups. Ignored when `Weapons` is `true`. |
 
 Consoles may be wider than one cell (`Size`); their textures stretch over the whole side. When a GameSet update gives a console fewer `Buttons`, saved consoles lose the groups that no longer exist; new groups start without a key.
