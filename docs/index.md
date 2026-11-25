@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /v0.1.5/
+      link: /v0.1.6/
     - theme: alt
       text: Your first mod in 10 minutes
-      link: /v0.1.5/getting-started/first-extension
+      link: /v0.1.6/getting-started/first-extension
     - theme: alt
       text: Older versions
       link: /changes
@@ -23,31 +23,31 @@ features:
   - icon: 🪐
     title: GameSets
     details: A complete set of content for a world. Blocks, items, recipes, generation, mobs, tutorials and game modes.
-    link: /v0.1.5/gamesets/structure
+    link: /v0.1.6/gamesets/structure
     linkText: GameSet reference
   - icon: 🧩
     title: Extensions
     details: Add to or change an existing GameSet without copying it. Combine several extensions in one world.
-    link: /v0.1.5/extensions/
+    link: /v0.1.6/extensions/
     linkText: Create an extension
   - icon: 🎨
     title: Texture packs
     details: Restyle blocks, items, glow maps and the interface of every GameSet at once.
-    link: /v0.1.5/texture-packs
+    link: /v0.1.6/texture-packs
     linkText: Make a texture pack
   - icon: 🛠️
     title: GameSet editor
     details: Edit every block, item and recipe inside the game, with a live preview and checks.
-    link: /v0.1.5/getting-started/editor
+    link: /v0.1.6/getting-started/editor
     linkText: Open the editor
   - icon: 🌌
     title: World generation
     details: Design biomes and asteroids with shapes, caves, tunnels, ore layers and veins.
-    link: /v0.1.5/gamesets/generation
+    link: /v0.1.6/gamesets/generation
     linkText: Generation reference
   - icon: 🌐
     title: Multiplayer ready
     details: Players who join a server download its GameSet, extensions and texture packs automatically.
-    link: /v0.1.5/sharing
+    link: /v0.1.6/sharing
     linkText: Sharing mods
 ---

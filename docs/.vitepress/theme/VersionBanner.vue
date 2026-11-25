@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useRoute, withBase } from 'vitepress'
 
-const latest = 'v0.1.5'
+const latest = 'v0.1.6'
 const route = useRoute()
 
 const version = computed(() => {
